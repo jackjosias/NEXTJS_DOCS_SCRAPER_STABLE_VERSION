@@ -1,0 +1,10 @@
+{
+  "repo_url": "https://github.com/vercel/next.js.git",
+  "branch": "main",
+  "docs_path": "docs",
+  "temp_clone_dir": "nextjs_repo_temp",
+  "output_filename": "nextjs_docs_dump_v1.json",
+  "file_extensions": [
+    ".mdx"
+  ]
+}
