@@ -528,9 +528,9 @@ Total:               ~6-8 MB
 cd NEXTJS_DOCS_SCRAPER_STABLE_VERSION
 git init
 
-# 2. Configurer utilisateur Git
-git config user.name "Jack Josias"
-git config user.email "jackjosias@github.com"
+# 2. Configurer utilisateur Git (LOCAL - pas poussé publiquement)
+git config user.name "YOUR_NAME"
+git config user.email "your.email@example.com"
 
 # 3. Ajouter les fichiers
 git add main.py requirements.txt config.json .gitignore README.md
@@ -547,20 +547,22 @@ git commit -m "Initial commit: Next.js v16.0.8 docs scraper with auto-version de
 # 5. Créer branche principale
 git branch -M main
 
-# 6. Ajouter remote
-git remote add origin git@github.com:jackjosias/NEXTJS_DOCS_SCRAPER_STABLE_VERSION.git
+# 6. Ajouter remote (remplacer USERNAME par votre username GitHub)
+git remote add origin git@github.com:USERNAME/NEXTJS_DOCS_SCRAPER_STABLE_VERSION.git
 
 # 7. Push vers GitHub
 git push -u origin main
 ```
+
+> **⚠️ SÉCURITÉ**: Les commandes `git config user.name` et `git config user.email` ci-dessus sont **locales uniquement**. Elles ne sont **jamais** poussées vers GitHub. Remplacez `YOUR_NAME` et `your.email@example.com` par vos informations réelles avant d'exécuter.
 
 ### Vérifier le Déploiement
 
 ```bash
 # Vérifier remote est configuré
 git remote -v
-# origin	git@github.com:jackjosias/NEXTJS_DOCS_SCRAPER_STABLE_VERSION.git (fetch)
-# origin	git@github.com:jackjosias/NEXTJS_DOCS_SCRAPER_STABLE_VERSION.git (push)
+# origin  git@github.com:USERNAME/NEXTJS_DOCS_SCRAPER_STABLE_VERSION.git (fetch)
+# origin  git@github.com:USERNAME/NEXTJS_DOCS_SCRAPER_STABLE_VERSION.git (push)
 
 # Vérifier l'historique
 git log --oneline
@@ -709,7 +711,7 @@ See LICENSE file for full text.
 
 | Ressource | Lien |
 |---|---|
-| **GitHub Repo** | [NEXTJS_DOCS_SCRAPER_STABLE_VERSION](https://github.com/jackjosias/NEXTJS_DOCS_SCRAPER_STABLE_VERSION) |
+| **GitHub Repo** | [NEXTJS_DOCS_SCRAPER_STABLE_VERSION](https://github.com/vercel/next.js) (Template) |
 | **Latest Release** | [v16.0.8](https://github.com/vercel/next.js/releases/tag/v16.0.8) |
 | **Source Commit** | [817ee56](https://github.com/vercel/next.js/commit/817ee56da939545d4b77cc54542f4c45a524e60a) |
 | **Next.js Docs** | [nextjs.org/docs](https://nextjs.org/docs) |
